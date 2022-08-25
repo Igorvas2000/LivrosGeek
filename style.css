@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root{
+    --azul:#00FFFF;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--azul);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding:0 7%;
+    padding-top: 12rem;
+}
+.btn{
+    font-size: 2rem;
+    padding:.7rem 3rem;
+    background: #ff4521;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+    background: #444; 
+}
+
+.btn-book1{
+    font-size: 1.8rem;
+    padding:.2rem 1rem;
+    background: #ff4521;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+.btn-book1:hover{
+    background: #444; 
+}
+
+.btn-book2{
+    font-size: 1.3rem;
+    padding:.4rem 1rem;
+    background: #ff4521;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+.btn-book2:hover{
+    background: #444; 
+}
+
+.btn-book3{
+    font-size: 1.3rem;
+    padding:.4rem 1rem;
+    background: #ffff00;
+    color: #000;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+.btn-book3:hover{
+    background: #444; 
+}
+
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background:#00FF;
+    width: 100%;
+}
+
+header .heading{
+    font-size: 3rem;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+
+header #menu{
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background:#04FF;
+    padding: 1rem;
+}
+
+header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #000000; 
+}
+
+header .navbar ul li a:hover{
+    color: #fff;
+
+
+}
+
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../imagens/ler.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.home .image{
+    flex:1 1 40rem;
+
+}
+
+.home .image img{
+    width:100%;
+
+}
+.home .content{
+    flex:1 1 40rem;
+
+}
+
+.home .content h1{
+    font-size: 8rem;
+    color: #ffff00;
+    
+
+}
+.home .content p{
+    font-size: 1.8rem;
+    color: #fff;
+    padding:1rem 0;
+
+}
+
+
+
+.sobre{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    background: url(../imagens/sobre.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.sobre .image{
+    flex:0 0 30rem;
+
+}
+
+.sobre .image img{
+    width:10%;
+
+}
+
+
+.sobre .content{
+    flex:1 1 40rem;
+
+}
+
+
+.sobre .content h1{
+    font-size: 4rem;
+    color: #000;
+    
+
+}
+.sobre .content p{
+    font-size: 1.6rem;
+    color: #000;
+    padding:1rem 0;
+
+}
+
+.coluna{
+    
+    float: left;
+    width: 31%;
+    padding: 5px;
+}
+
+.coluna1{
+
+    float: left;
+    width: 31%;
+    padding: 5px;
+
+}
+
+.downloads{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/ler.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.downloads::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.downloads .content{
+    flex:1 1 40rem;
+
+}
+
+.downloads .content h1{
+    font-size: 2rem;
+    color: #ffff00;
+    
+}
+
+
+.book1_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa.png) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book1_class .content{
+    flex:1 1 40rem;
+}
+.book1_class .content h1{
+    font-size: 2rem;
+    color: #00FFFF;
+}
+
+.book1_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #fff;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book1_class .content h3{
+    font-size: 1.4rem;
+    color: #fff;
+    padding:0rem 0;
+    text-align: left;
+}
+
+
+
+.book2_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa2.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book2_class .content{
+    flex:1 1 40rem;
+}
+.book2_class .content h1{
+    font-size: 2rem;
+    color: #00FF;
+}
+
+.book2_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #fff;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book3_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa3.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book3_class .content{
+    flex:1 1 40rem;
+}
+.book3_class .content h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.book3_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #ff4521;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book4_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa4.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book4_class .content{
+    flex:1 1 40rem;
+}
+.book4_class .content h1{
+    font-size: 2rem;
+    color: #ffff00;
+}
+
+.book4_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #fff;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book5_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa5.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book5_class .content{
+    flex:1 1 40rem;
+}
+.book5_class .content h1{
+    font-size: 2rem;
+    color: #ffff00;
+}
+
+.book5_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #fff;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book6_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa6.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book6_class .content{
+    flex:1 1 40rem;
+}
+.book6_class .content h1{
+    font-size: 2rem;
+    color: #666;
+}
+
+.book6_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #000;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book7_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa7.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book7_class .content{
+    flex:1 1 40rem;
+}
+.book7_class .content h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.book7_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #ffff00;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book8_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa8.png) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book8_class .content{
+    flex:1 1 40rem;
+}
+.book8_class .content h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.book8_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #ffff00;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+.book9_class{
+    min-height: 100vh;
+    justify-content: space-around;
+    background: url(../imagens/capa9.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.book9_class .content{
+    flex:1 1 40rem;
+}
+.book9_class .content h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.book9_class .content h2{
+    
+    font-size: 1.4rem;
+    color: #ffff00;
+    padding:0rem 0;
+    text-align: left;
+
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home .content{
+        text-align: center;
+
+    }
+    .home .content h1{
+        font-size:4rem;
+    }
+
+    .sobre .content{
+        text-align: center;
+    }
+    .sobre .content h1{
+        font-size: 4rem;
+    }
+
+    .downloads .content{
+        text-align: center;
+    }
+
+    .downloads .content h1{
+        font-size:4rem;
+    }
+
+    .book1_class .content{
+        text-align: center;
+    }
+    .book1_class .content h1{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 .1rem;
+    }
+
+    header #menu{
+        display: block;
+    }
+
+
+    header .navbar{
+        position: fixed;
+        top:6.2rem; right:-120%;
+        height: 100%;
+        width: 100%;
+        border-top: .2rem solid rgba(0,0,0,.3);
+
+    }
+
+    header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: #fff;
+        padding-bottom: 15rem;
+
+    } 
+    header .navbar ul li{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    header .navbar ul li a{
+        font-size: 4rem;
+        color:#333;
+        display: block;
+
+    }
+    header .navbar ul li a:hover{
+        color: var(--azul);
+
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle{
+        right: 0;
+        
+    }
+
+    section{
+        padding-top: 5rem;
+    }
+
+}
